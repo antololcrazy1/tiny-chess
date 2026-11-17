@@ -13,7 +13,7 @@
 - Evaluation mirrors the house engine's piece-square tables (material + positional terms, king phase interpolation, bishop-pair bonus).
 - It talks to the env over HTTP (`MAKEFUN_ENV_URL`): `POST /game` for the position, `POST /move` to play.
 
-Local practice trials against the house gauntlet: trial-0 2W 2D 2L (Elo ≈1,275), trial-1 2W 3D 1L (Elo ≈1,360).
+Local practice trials against the house gauntlet: trial-0 2W 2D 2L (Elo ≈1,275), trial-1 2W 3D 1L (Elo ≈1,360). The transposition table keeps the deeper entry when a shallower search revisits a position.
 
 ## Source
 
